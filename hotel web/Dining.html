@@ -1,0 +1,211 @@
+<html>
+<head>
+<link rel="stylesheet" href="dining.css">
+<link rel="stylesheet" href="animation.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+<br><center><img src="moonlight.jpg" class="logo"></center><br>
+<ul>
+  <li><a href="home.html">Home</a></li>
+  <li><a href="Gallery.html">Gallery</a></li>
+  <li><a href="Facilities.html">Facilities</a></li>
+  <li><a href="index.html">Accomodation</a></li>
+  <li><a href="Dining.html" class="active">Dining</a></li>
+  <li><a href="funtion.html">Functions</a></li>
+  <li><a href="cotact.html">Contact</a></li>
+  <li><a href="about.html">About</a></li>
+</ul>
+
+<br><div class = "center topic"> Dining </div><br>
+
+<div class="slideshow-container">
+
+      <div class="mySlides fade center">
+        <img src="a1.jpg">
+      </div>
+      <div class="mySlides fade center">
+        <img src="a2.jpg">
+      </div>
+      <div class="mySlides fade center">
+        <img src="a3.jpg">
+      </div>
+      <div class="mySlides fade center">
+        <img src="a4.jpeg">
+      </div>
+      <div class="mySlides fade center">
+        <img src="a5.jpg">
+      </div>
+      <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> </div>
+      </div>
+
+      <script>
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 3000); // Change image every 2 seconds
+      }
+      </script>
+  </div>
+
+  <DIV class ="center white para box">
+    <br>Comprising the very best of bars and restaurants in Colombo, The moonlight offers grandeur extravagance & and unparalleled dining experiences. Serving mesmerized dishes from around the world, you will be spoilt for choice. Each one of our dining areas feature unique dining options that fit seamlessly into the splendour of our culture.Embark on a culinary adventure as you wish. Always delighted to cater to your individual needs, glading to customise our menus to your unique preferences serving with the finest of Sri Lankan hospitality, ready to welcome you at any time.
+  </div>
+  
+<div class="row">
+  <div class="column">
+    <center><img style="width:550px; height: 450px;" src="restaurant.jpg"></center>
+  </div>
+  
+  <div class="column">
+    <div class = "white">
+      <div class = "areas">Golden Dragon Restaurant </div><br> 
+      <div class = "intro">An unforgettable, gastronomic adventure around the globe. </div><br><br>
+
+      <div class ="paragraph">
+        Dining is a continuous pleasure at the five star Moonlight Hotel Colombo with an array of different culinary options to choose from. with the most expansive international buffet to be found in Sri Lanka with modern and sophisticated setting, offering a peerless dining experience. Features à la minute cuisine, freshly cooked right in front of guests in purpose built action stations.<br>
+
+        Golden Dragon takes you on an unassumingly worldwide journey, giving you hundreds flavors to taste.  Special feast on Japanese, Chinese, Thai, Indian, Mexican and Italian and more best cuisines around the world. Also featuring mouth-watering Sri Lankan traditional dishes With a Western and Eastern twist.<br><br>
+      </div>
+
+      <div class = "opening_time">
+        Opening hours <br><br>
+        <div class="paragraph">
+          Breakfast - 7.00 a.m. to 11.00 a.m.<br>
+          Lunch - 12.30 p.m. to 4.00p.m.<br>
+          Dinner - 7.00 p.m. to 11.00 p.m.<br><br>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br><br><br>
+
+<div class="row">
+  <div class="column">
+     <center><img style="width:550px; height: 450px;" src="cafe.jpeg"></center>
+  </div>
+  
+  <div class="column">
+    <div class = "white">
+      <div class = "areas">Bloom Bee Cafe </div><br>
+      <div class = "intro">Explore the varied tastes of gourmet food, coffee & tea </div><br><br>
+
+      <div class ="paragraph">
+        Here’s a place that celebrates the island’s love for tea and all other highs in life. Welcome to the Bloom Bee Cafe serving a range of delectable crispy pastries, a range of flavourful sandwiches and a variety of delicious cakes and desserts. Serving with melt-in-your-mouth different unique flavours for dipping. <br>
+
+        Bloom bee also offers exclusive coffees and freshly pressed healthy juices and smoothies, while not forgetting the perfect cup of Sri Lankan tea with Classical music played by the pianist during the day and in the evening.<br><br>
+      </div>
+
+      <div class = "opening_time">
+        Opening hours<br><br>
+        <div class="paragraph">7.00 a.m. To 8.30 p.m.</div><br><br>
+      </div>
+    </div>
+  </div>
+</div>
+<br><br><br>
+
+<div class="row">
+  <div class="column">
+     <center><img style="width:550px; height: 450px;" src="bar.jpg"></center>
+  </div>
+  
+  <div class="column">
+    <div class = "white">
+      <div class = "areas">Ocean Breeze Bar </div><br>
+      <div class = "intro">Enjoy wondrous food & cocktails as you lounge by the pool </div><br><br>
+
+      <div class ="paragraph">
+        Located along the glistening pool waters, Ocean breeze bar is the ideal place to unwind and relax with your friends with rhyme of the beach vibes. The beverage list is extensive and offer variety of snacks, bites and mains on offer.<br>
+
+        The brand-new Sri Lankan bar, a selection of 69 Arrack flavours along with the most delicious local snacks such as, wade, rotis and deviled meat items. The perfect location to end the day with catching the last rays of the sun as it sinks into the horizon with fine wines from our exclusive cellars or tropical cocktails inspired by local flavors, while nibbling on great snacks and dance the night away with your favourite bands and DJ's!<br><br>
+      </div>
+
+      <div class = "opening_time">
+        Opening hours <br><br>
+        <div class="paragraph">10.00 a.m. To 12.00 midnight </div><br><br>
+      </div>
+    </div>
+  </div>
+</div>
+<br><br><br><br>
+
+<center><a href="Online order.html"><button>Online order</button></a></center>
+<br><br><br>
+
+
+<!-- footer -->
+
+<div class="footer1">
+
+  <h4>Connect With Us</h4>
+
+<a href="facebook.com" class="fa fa-facebook"></a>
+<a href="twitter.com" class="fa fa-twitter"></a>
+<a href="instagram.com" class="fa fa-instagram"></a>
+<a href="pinterest.com" class="fa fa-pinterest"></a>
+
+</div>
+<div class="footer2 white">
+
+  <h4>Contact us</h4> <br>
+  <table>
+    <tr>
+      <td style ="color:white;">Phone</td>
+      <td style ="color:white;" class="f2a">011-2134341</td>
+    </tr>
+    <tr>
+      <td style ="color:white;">email </td>
+      <td class="f2a"><a href = "mailto: moonlight99@gmail.com">moonlight99@gmail.com</a></td>
+    </tr>
+    <tr>
+      <td><a href="contactus.html">More.. </a></td>
+    </tr>
+  </table>
+  
+</div>
+<div class="footer3">
+<a href="gallery.html" style="text-decoration: none;"><p class="namelink" >Gallery</p></a>
+<a href="facilities.html" style="text-decoration: none;"><p class="namelink" >Facilities</p></a>
+<a href="index.html" style="text-decoration: none;"><p class="namelink" >Accomodation</p></a>
+<a href="dining.html" style="text-decoration: none;"><p class="namelink" >Dining</p></a>
+<a href="funtion.html" style="text-decoration: none;"><p class="namelink" >Functions</p></a>
+<a href="cotact.html" style="text-decoration: none;"><p class="namelink" >Contact Us</p></a>
+<a href="about.html" style="text-decoration: none;"><p class="namelink" >About US</p></a>
+
+  
+</div>
+
+<div class="footer4">
+
+  <img src="map.jpg" class="mapimg">
+
+</div>
+
+
+
+</body>
+</html>
+
