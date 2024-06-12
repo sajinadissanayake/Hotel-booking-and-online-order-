@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<link rel="stylesheet" type="text/css" href="homecss.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+
+	.logo{
+  width:150px;
+  height:150px;
+  border-radius: 50%;
+  vertical-align: middle;
+  box-shadow: 0px 0px 45px #ffd700;
+  transform: translateY(-7px);
+}
+
+	body{
+		background-color: black;
+		
+	}
+	/*navbar*/
+
+	ul {
+  		list-style-type: none;
+  		margin: 0;
+  		padding: 0;
+  		overflow: hidden;
+  		background-color: #333;
+
+}
+
+	li {
+  		float: left;
+  		border-right:1px solid #bbb;
+      border-radius: 10%;
+		}
+
+	li:last-child {
+  		border-right: none;
+		}
+
+	li a {
+  		display: block;
+  		color: white;
+  		text-align: center;
+  		padding: 14px 16px;
+  		text-decoration: none;
+		}
+
+	li a:hover:not(.active) 
+		{
+  		background-color: #111;
+  		color: white;
+		}
+
+    
+		.act {
+  		background-color: #ffd700;
+  		color: black;
+		}
+
+    .log{
+      color:black;
+      background-color: #e6e600;
+        border-right:1px solid black;
+    }
+	
+	
+
+	
+	
+</style>
+<title></title>
+</head>
+
+
+<body>
+<center><img src="moonlight.jpg" class="logo"></center><br>
+
+
+<ul>
+  <li><a class="act" href="#home">Home</a></li>
+  <li><a href="Gallery.html">Gallery</a></li>
+  <li><a href="Facilities.html">Facilities</a></li>
+  <li><a href="index.html">Accomodation</a></li>
+  <li><a href="Dining.html">Dining</a></li>
+  <li><a href="funtion.html">Functions</a></li>
+  <li><a href="cotact.html">Contact</a></li>
+  <li><a href="about.html">About us</a></li>
+  <li style="float:right" ><a class="log" href="login.html">Login</a></li>
+  <li style="float:right" ><a class="log" href="signin.html">Sign in</a></li>
+</ul>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 7</div>
+  <img src="s11.jpg" style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 7</div>
+  <img src="s22.jpg" style="width:100%">
+ 
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 7</div>
+  <img src="s33.jpg" style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 7</div>
+  <img src="s44.jpg" style="width:100%">
+  
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">5 / 7</div>
+  <img src="s55.jpg" style="width:100%">
+  
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">6 / 7</div>
+  <img src="s66.jpg" style="width:100%">
+ 
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">7 / 7</div>
+  <img src="s77.jpg" style="width:100%">
+ 
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>  
+</div>
+<br>
+<br>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+<div class="twi">
+
+    
+    
+      <div class="t">
+  The MoonLight offers the elite standard for guests desiring the ultimate in luxurious, retreat accommodation. Offering 5 acres of thoughtfully designed grounds and immaculately maintained facilities, the beach side provides total peace and tranquility in a delightfully secluded setting.
+Situated only one & half hour from Katunayaka Airport. MoonLight is easily accessible for both international and local guest. The estate is perfect for groups or families seeking luxury resort with total privacy. We pride ourselves on the level of service provided, facilitating and accommodation experience like no other.
+Moonlight has also been well frequented by those looking for a unique venue to hold special events or corporate retreats. With an abundance of onsite opportunities for activities and events, there is scope to tailor the day exactly to your requirements. The functions held here have included birthdays, charity events, weddings and Indian wedding ceremonies, corporate launch days, conferences, and Christmas parties.
+</div>
+    
+      <div class="images">
+        <img class="mi" src="mi.jpg">
+        
+      </div>  
+</div>
+<h1>break</h1>
+<div class="textpg">
+  Function Halls<br><br>
+  Luxury halls for your functions
+  
+</div>
+<div class="imagepg"><img src="wh.jpg" class="linkdivs"></div>
+
+<div class="textpg">
+  Delicious food <br><br>
+  Italian<br>
+  Indian<br>
+  Chinese<br><br>
+  With the international chef's 
+
+</div>
+<div class="imagepg"><img src="fd.jpg" class="linkdivs"></div>
+
+<div class="textpg">
+  Accomodation<br><br>
+
+  24-hour room service.
+</div>
+<div class="imagepg"><img src="rm.jpg" class="linkdivs"></div>
+<div class="textpg">
+  Fitness center <br><br>
+  with best personal trainers ready assistance to those who need customised fitness plans.
+</div>
+<div class="imagepg"><img src="gym1111.jpg" class="linkdivs"></div>
+
+<div class="textpg">
+  Pool<br><br>
+  Enjoy wondrous as you lounge by the pool
+</div>
+<div class="imagepg"><img src="sp11.jpg" class="linkdivs"></div>
+
+<div class="textpg">
+  Welness center<br><br>
+  We invite you to discover the   time-tested powers of healing Balinese treatments in the blissfully enchanting stillness of our super luxury spa.
+</div>
+<div class="imagepg"><img src="spa1212.jpg" class="linkdivs"></div>
+
+<br>
+<h1 >break</h1>
+
+
+
+
+<div>
+<div class="footer1">
+
+  <h4>Connect With Us</h4>
+
+<a href="facebook.com" class="fa fa-facebook"></a>
+<a href="twitter.com" class="fa fa-twitter"></a>
+<a href="instagram.com" class="fa fa-instagram"></a>
+<a href="pinterest.com" class="fa fa-pinterest"></a>
+
+</div>
+<div class="footer2">
+
+  <h4>Contact us</h4> <br>
+  <table>
+    <tr>
+      <td>Phone</td>
+      <td class="f2a">011-2134341</td>
+    </tr>
+    <tr>
+      <td>email </td>
+      <td><a href = "mailto: moonlight99@gmail.com">moonlight99@gmail.com</a></td>
+    </tr>
+    <tr>
+      <td><a href="contactus.html">More.. </a></td>
+    </tr>
+  </table>
+  
+</div>
+
+<div class="footer3">
+<a href="gallery.html" style="text-decoration: none;"><p class="namelink" >Gallery</p></a>
+<a href="facilities.html" style="text-decoration: none;"><p class="namelink" >Facilities</p></a>
+<a href="index.html" style="text-decoration: none;"><p class="namelink" >Accomodation</p></a>
+<a href="dining.html" style="text-decoration: none;"><p class="namelink" >Dining</p></a>
+<a href="funtion.html" style="text-decoration: none;"><p class="namelink" >Functions</p></a>
+<a href="cotact.html" style="text-decoration: none;"><p class="namelink" >Contact Us</p></a>
+<a href="about.html" style="text-decoration: none;"><p class="namelink" >About US</p></a>
+
+</div>
+
+<div class="footer4">
+
+  <img src="map.jpg" class="mapimg">
+
+</div>
+</div>
+
+
+
+</body>
+</html>

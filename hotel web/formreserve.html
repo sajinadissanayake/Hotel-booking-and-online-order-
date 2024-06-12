@@ -1,0 +1,191 @@
+<html>
+<head>
+<link rel="stylesheet" href="form.css">
+
+<script language="javascript" type="text/javascript">
+function x()
+{
+	if (document.my.name.value.length <1)
+		{window.alert("Please add a Name!")
+		return;}
+
+    if (document.my.checkin.value.length <1)
+		{window.alert("Please add a checking date!")
+		return;}
+
+    if (document.my.checkout.value.length <1)
+		{window.alert("Please add a checkout date!")
+		return;}
+
+	  if (document.my.phone.value.length <1)
+		{window.alert("Please add a Phone number")
+		return;}
+    
+    if (document.my.Payment.value.length <1)
+		{window.alert("Please add a Payment number")
+		return;}
+
+}
+</script>
+
+</head>
+<style>
+  /*logo*/
+.logo{
+  width:150px;
+  height:150px;
+  border-radius: 50%;
+  vertical-align: middle;
+  box-shadow: 0px 0px 45px #ffd700;
+  transform: translateY(-7px);
+}
+
+/*navbar*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+li {
+  float: left;
+  border-right:1px solid #bbb;
+}
+li:last-child {
+  border-right: none;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover:not(.active) 
+{
+  background-color: #111;
+}
+.active {
+  background-color: #ffd700;
+}
+
+body{
+  background-color:black;
+}
+.center{
+  text-align: center;
+}
+.white{
+  color: white;
+}
+form{
+  display: inline-block;
+  margin-left: 550px;
+}
+.topic{
+  font-size: 32px;
+  color: #ffd700;
+  text-align: center;
+  font-weight: bold;
+}
+.name{
+  font-size: 20px;
+  padding-bottom: 10px;
+  padding-left: 8px;
+}
+input[type=text]{
+  font-size: 15px;
+  width: 100%;
+  padding:12px;
+  margin-bottom: 15px;
+  display: inline-block;
+  background: #f1f1f1;
+  border-radius: 20px;
+  border: none;
+}
+input[type=submit]{
+  width: 110px;
+  height: 40px;
+  font-size: 20px;
+  font-family: 'Times New Roman';
+  font-weight: bold;
+  color: black;
+  background-color: #fff;
+  border: none;
+  border-radius: 10px;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+input[type=submit]:hover {
+  background-color: gold;
+  color: black;
+  box-shadow: 0px 6px 20px #a6a6a6;
+  transform: translateY(-7px);
+}
+button {
+  width: 90px;
+  height: 40px;
+  font-size: 20px;
+  font-family: 'Times New Roman';
+  font-weight: bold;
+  color: black;
+  background-color: #fff;
+  border: none;
+  border-radius: 20px;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+button:hover {
+  background-color: gold;
+  color: black;
+  box-shadow: 0px 6px 20px #a6a6a6;
+  transform: translateY(-7px);
+}
+a:link {
+  text-decoration: none;
+}
+</style>
+
+<body>
+<center><img src="moonlight.jpeg" class="logo"></center><br>
+<ul>
+<li><a class="" href="home.html">Home</a></li>
+  <li><a href="Gallery.html">Gallery</a></li>
+  <li><a href="Facilities.html">Facilities</a></li>
+  <li><a class="act" href="">Accomodation</a></li>
+  <li><a href="Dining.html">Dining</a></li>
+  <li><a href="funtion.html">Functions</a></li>
+  <li><a href="cotact.html">Contact</a></li>
+  <li><a href="about.html">About us</a></li>
+</ul>
+<br><br>
+<div class="white formc">
+	<form name ="my" method ="post" action="formsubmit.php">
+		<fieldset style="width: 600px">
+			<br><div class="topic">CHECK AVAILABILITY</div><br>
+            <div class = "name">Customer Name</div><br>
+            <input type="text" name="name" placeholder="Enter Your name" Required>
+            <div class = "checkin">Check In Date :</div>
+            <input type = "date" name="indate">
+          
+            <div class = "checkout">Check Out Date:</div>
+            <input type = "date" name="outdate">      
+            <div class = "name">Phone number</div>
+            <input type ="text" name ="phone" placeholder="Enter Phone number"><br>
+            <div class = "name">Payment methods</div><br>
+            <input type="radio" name="payment" value="1">on cash<br>
+            <input type="radio" name="payment" value="2">credit/ debit card payment<br>
+            <input type="radio" name="payment" value="3">Pay with Visa/master<br><br><br>
+            <input type ="submit">
+            <button><a href="Online order.html">Cancel</a></button><br><br>
+            
+         </div>        
+      </div> 	
+    </fieldset>
+  </form>
+</div>
+</body>
+</html>

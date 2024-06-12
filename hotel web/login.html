@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+
+	<style type="text/css">
+
+    .logo{
+  width:150px;
+  height:150px;
+  border-radius: 50%;
+  vertical-align: middle;
+  box-shadow: 0px 0px 45px #ffd700;
+  transform: translateY(-7px);
+  margin-top: 150px;
+  }
+		
+		.f{
+			
+ 	 	width: 300px;
+ 	 	height: 300px;
+  	margin-left:500px;
+		}
+
+		/*login button*/
+		.buttonlog {
+  padding: 5px 7px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: black;
+  background-color: gold;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 5px #4d4d4d;
+  width: 120px;
+}
+
+.buttonlog:hover {background-color:#fff;color: black; }
+
+.buttonlog:active {
+  background-color: gold;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+  text-decoration: none;
+}
+input[type=textbox]{
+  font-size: 13px;
+  width: 100%;
+  padding:12px;
+  margin-bottom: 15px;
+  display: inline-block;
+  background: #f1f1f1;
+  border-radius: 20px;
+  border: none;
+}
+input[type=password]{
+  font-size: 13px;
+  width: 100%;
+  padding:12px;
+  margin-bottom: 15px;
+  display: inline-block;
+  background: #f1f1f1;
+  border-radius: 20px;
+  border: none;
+}
+body{
+	font-size: 20px;
+  background-color:black;
+  color: white;
+}
+	</style>
+
+ <script type = "text/javascript" language="javascript">
+         function validateform() 
+         {
+            if (document.form.uname.value.length==0) 
+               {
+                window.alert("username not given")
+                return;
+              }
+            if (document.form.password.value.length==0) 
+               { 
+                window.alert("password not given")
+                return;
+               }
+            
+          }
+     </script>
+</head>
+<body>
+  <center><img src="moonlight.jpg" class="logo"></center><br>
+<div class="f">
+		<form name="form" method="post" action="http://localhost/lg.php">
+		<br><br>
+		<center>
+		Username
+    <br>
+        <input type="textbox" placeholder="Enter your username" name="uname"><br>
+        Password<br>
+        <input type="password" name="password" placeholder="Enter your password"><br><br>
+       
+        <button class="buttonlog"><a  style="text-decoration: none;color: black;" href="home.html">Cancel</a></button>
+        <input type="submit" class="buttonlog" name="login" onclick="validateform()" value="login">
+        
+
+        </center>
+        
+        
+      </form> 
+	  
+</div>	
+</body>
+</html>

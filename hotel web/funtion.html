@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Function</title>
+<link rel="stylesheet" href="style22.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style type="text/css">
+
+  .logo{
+  width:150px;
+  height:150px;
+  border-radius: 50%;
+  vertical-align: middle;
+  box-shadow: 0px 0px 45px #ffd700;
+  transform: translateY(-7px);
+}
+  
+
+  body{
+    background-color:black ;
+  
+  }
+    /*navbar*/
+
+  ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+
+}
+
+  li {
+      float: left;
+      border-right:1px solid #bbb;
+      border-radius: 10%;
+    }
+
+  li:last-child {
+      border-right: none;
+    }
+
+  li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+  li a:hover:not(.active) 
+    {
+      background-color: #111;
+      color: white;
+    }
+    .act {
+      background-color: #ffd700;
+      color: black;
+    }
+  
+  
+  
+* {
+  box-sizing: border-box;
+}
+img{
+  width: 1250px;
+  height: 400px;
+}
+.mySlides {
+  display: none;
+}
+/The dots/
+.dot {
+  height: 50px;
+  width: 50px;
+  margin: 0 2px;
+  background-color: white;
+  border-radius: 50%;  
+  transition: background-color 0.6s ease;
+  padding: 0px 10px;
+  position: relative;
+  bottom: 25px;
+  text-align: center;
+  
+}
+.active{
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+  </style>
+</head>
+<body>
+<div class="a">
+	 Function And Events <br><br>
+</div> 
+<div class=" "><html> 
+<body> 
+  
+<div class="im"><img src="moonlight.jpg" class="logo"><br><br>
+
+</div>
+<ul>
+
+   <li><a href="home.html">Home</a></li>
+    <li><a href="index.html">Accomodation</a></li>
+    <li><a href="Dining.html">Dining</a></li>
+ <li><a href="Facilities.html">Facilities</a></li>
+   <li><a class="act" href="">Function</a></li>
+ <li><a href="Gallery.html">Gallery</a></li>
+  <li><a href="cotact.html">Contact us</a></li>
+  <li><a href="about.html">About us</a></li>
+</ul> 
+
+<div class="slideshow-container">
+
+      <div class="mySlides fade center">
+        <img src="hall2.jpg">
+      </div>
+      <div class="mySlides fade center">
+        <img src="meeting1.jpg">
+      </div>
+      <div class="mySlides fade center">
+        <img src="outdoor2.jpg">
+      </div>
+      <div class="mySlides fade center">
+        <img src="outdoor3.jpg">
+      </div>
+      <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> </div>
+      </div>
+
+      <script>
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 3000); // Change image every 2 seconds
+      }
+      </script>
+  </div>
+<div class="row">
+  <div class="columna">
+    <br><br><br>
+     <center><img style="width:450px; height: 300px;" src="hall1.jpg"></center>
+  </div>
+  <br><br>
+  <div class="columna">
+     <h2 style="color:  #FFD700;" > Weddings </h2>
+      <div class = "intro">Wedding Venue, Vendor and Hotel Search</div><br>
+
+      <div class ="paragraph">
+      If you are looking for the ideal location for your wedding, MoonLight Estate is the perfect venue for your once-in-a-lifetime celebration. With the entire 5 acres at your fingertips, we can help craft a special experience that is tailor-made to your dreams - ensuring that your wedding honours your family, friends and the story of love that you are creating.
+
+The extensive MoonLight Estate grounds offer a range of venues for the wedding ceremony, providing space for up to 100 guests to celebrate your special day in an exquisite setting. Photographers delight in the natural beauty of our estate, with stunning backdrops over the manicured gardens and beside your own private lake. Breathtakingly beautiful, and suitable for both the traditional tastes or a more modern aesthetic.
+<br><br>
+      </div>
+ 
+  
+</div>
+ </div>
+<br><br>
+      
+       
+
+<!-- Text Box -->
+
+<div class="box">
+  <dl>
+         <dd style="font-size:20px; color:#fff5cc">   Your Wedding Package Includes</dd><br>
+        <dd>~ Private Entrance, Arrivals Lobby and Reception Suit exclusive to you and you guests.</dd>
+        <dd>~ Red Caprpert Welcome with bubbly served to the Bridal Party.</dd>
+        <dd>~ Fresh Floral arragngement for your top table.</dd>
+        <dd>~ Pre Wedding spapachages and complimentary counsultation for bridal party </dd>
+        <dd>~ Planning Consultation with your Wedding Team.</dd>
+      </dl>
+</div>
+<br><br>
+<div class="row">
+  <div class="columnb">
+    <br>
+     <center><img style="width:450px; height: 300px;" src="meeting2.jpg"></center>
+  </div>
+  
+  <div class="columnb">
+     <h2 style="color:  #FFD700;" > Corporate Functions</h2>
+      <div class = "intro">Planning Your Meeting.</div><br>
+
+      <div class ="paragraph">
+      
+Whether you're needing an executive getaway for a strategic retreat, a professional venue for an organizational conference, or a large premium locale to launch your latest offering to up to 100 guests - MoonLightis the solution for your corporate function needs.<br>
+
+Exuding professionalism and success, our MoonLight has an excellent range of facilities and spaces for large gatherings or small focused break-out groups. All of your requirements can be arranged and managed onsite, with optional catering and accommodation add-ons available for longer stays.<br><br>
+
+MoonLight has been strategically designed to provide for any corporate technological requirements. High-speed Wifi is available throughout the estate, and our integrated premium stereo system extends throughout the interior and exterior spaces, allowing for easy communication to large groups - and high quality sound quality to support your event.
+
+<br><br>
+      </div>
+</div>
+ </div>
+  <div class="columnc">
+    <br><br><br>
+     <center><img style="width:450px; height: 300px;" src="outdoor1.jpg"></center>
+  </div><br><br>
+   <div class="columnc">
+     <h2 style="color:  #FFD700;" >Pre Function</h2>
+      <div class = "intro">Planning Your Parties.</div><br>
+      <div class ="paragraph">
+      Whether you're planning an intimate birthday bash, a family get together or simply a catch up with old friends, finding the perfect venue can be half the battle. Luckily, our guide to the best SriLanka restaurants for small group dining is full of venues that come complete with bags of space, private dining rooms and plush booths - perfect for keeping everyone in your gang happy and smiling.<br><br><br>
+
+    Available outdoor and indoor locations it can be selected at your discretion. <br>
+    Outdoor-100 person<br>
+    Indoor-50-60 persons
+<br><br>
+      </div>
+
+      <br><br>
+<div class="tex">
+ <br>***Fill this form for more detail and request a proporsel*** <br>
+</div></center> <br><br>
+ <div class="bu">
+ <form name ="f" method = "post"  action = "Function form.html">
+    </select>
+  <input type ="submit" name ="s" value = "Click for Form"><br><br>
+  </form>
+
+
+</div>
+</div>
+<div>
+<div class="footer1">
+
+  <h4>Connect With Us</h4>
+
+<a href="facebook.com" class="fa fa-facebook"></a>
+<a href="twitter.com" class="fa fa-twitter"></a>
+<a href="instagram.com" class="fa fa-instagram"></a>
+<a href="pinterest.com" class="fa fa-pinterest"></a>
+
+</div>
+<div class="footer2">
+
+  <h4>Contact us</h4> <br>
+  <table>
+    <tr>
+      <td>Phone</td>
+      <td class="f2a">011-2134341</td>
+    </tr>
+    <tr>
+      <td>email </td>
+      <td><a href = "mailto: moonlight99@gmail.com">moonlight99@gmail.com</a></td>
+    </tr>
+    <tr>
+      <td><a href="contactus.html">More.. </a></td>
+    </tr>
+  </table>
+  
+</div>
+
+<div class="footer3">
+<a href="gallery.html" style="text-decoration: none;"><p class="namelink" >Gallery</p></a>
+<a href="facilities.html" style="text-decoration: none;"><p class="namelink" >Facilities</p></a>
+<a href="index.html" style="text-decoration: none;"><p class="namelink" >Accomodation</p></a>
+<a href="dining.html" style="text-decoration: none;"><p class="namelink" >Dining</p></a>
+<a href="funtion.html" style="text-decoration: none;"><p class="namelink" >Functions</p></a>
+<a href="cotact.html" style="text-decoration: none;"><p class="namelink" >Contact Us</p></a>
+<a href="about.html" style="text-decoration: none;"><p class="namelink" >About US</p></a>
+
+</div>
+
+<div class="footer4">
+
+  <img src="map.jpg" class="mapimg">
+
+</div>
+</div>
+<br><br>
+</body>
+</html>

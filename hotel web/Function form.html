@@ -1,0 +1,84 @@
+<html>
+<head>
+<link rel="stylesheet" href="funform.css">
+
+<script language="javascript" type="text/javascript">
+function x()
+{
+    if (document.my.name.value.length <1)
+        {window.alert("Please add a Name!")
+        return;}
+
+    if (document.my.address.value.length <1)
+        {window.alert("Please add a Address")
+        return;}
+
+    if (document.my.phone.value.length <10)
+        {window.alert("Please add a Phone number")
+        return;}
+
+    if (document.my.email.value.length <1)
+        {window.alert("Please add a email")
+        return;}
+
+    if (document.my.req.value.length <10)
+        {window.alert("Please add your function request")
+        return;}
+}
+</script>
+
+</head>
+
+<body>
+<center><img src="moonlight.jpg" class="logo"></center><br>
+<ul>
+    <li><a href="home.html">Home</a></li>
+    <li><a href="index.html">Accomodation</a></li>
+    <li><a href="Dining.html">Dining</a></li>
+ <li><a href="Facilities.html">Facilities</a></li>
+   <li><a class="act" href="">Function</a></li>
+ <li><a href="Gallery.html">Gallery</a></li>
+  <li><a href="cotact.html">Contact us</a></li>
+  <li><a href="about.html">About us</a></li>
+</ul>
+<br><br>
+
+<div class="white formc">
+    <form name ="my" method ="post" action="http://localhost/connect.php">
+        <fieldset style="width:400px">
+            <br><div class="topic">Enter Your Details</div><br>
+
+      <div class = "name"> Full Name</div>
+        <input type ="text" name ="name" placeholder="Enter Full Name"><br><br>
+
+      <div class = "name">Address</div>
+        <input type ="text" name ="address" placeholder="Enter Address"><br><br> 
+
+      <div class = "name">Phone number</div>
+        <input type ="text" name ="phone" placeholder="Enter Phone number"><br><br>
+
+        <div class = "name">Email</div>
+        <input type ="email" name ="email" placeholder="Enter Email"><br><br>
+       
+       <div class="select"> Chose a function iteam
+        
+  <select id="cars" name="select">
+    <option value="Wed">Wedding</option>
+    <option value="me">Meeting</option>
+    <option value="Party">Party</option>
+    <option value="other">Other</option>
+  </select>
+</div> <br>
+      <div class = "name">Function Request</div>
+       <textarea name="req" rows="10" cols="30">Type your function Request</textarea>
+  <br><br>
+  
+        <input type ="submit" name ="bu" value ="submit" onclick="x()">
+      <button><a href="funtion.html" target="_blank">Cancel</a></button><br><br></div>
+    </div>
+    </fieldset>
+  </form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<html>
+<head>
+<link rel="stylesheet" href="form.css">
+
+<script language="javascript" type="text/javascript">
+function x()
+{
+	if (document.my.name.value.length <1)
+		{window.alert("Please add a Name!")
+		return;}
+
+	if (document.my.address.value.length <1)
+		{window.alert("Please add a Address")
+		return;}
+
+	if (document.my.phone.value.length <1)
+		{window.alert("Please add a Phone number")
+		return;}
+
+}
+</script>
+
+</head>
+
+<body>
+<center><img src="moonlight.jpg" class="logo"></center><br>
+<ul>
+  <li><a href="home.html">Home</a></li>
+  <li><a href="Gallery.html">Gallery</a></li>
+  <li><a class="active"href="#facilities">Facilities</a></li>
+  <li><a href="index.html">Accomodation</a></li>
+  <li><a href="Dinning.html" >Dining</a></li>
+  <li><a href="funtion.html">Functions</a></li>
+  <li><a href="cotact.html">Contact</a></li>
+  <li><a href="about.html">About us</a></li>
+</ul>
+<br><br>
+
+<div class="white formc">
+	<form name ="my" method ="post" action="">
+		<fieldset style="width:400px">
+			<br><div class="topic">Booking Details</div><br>
+
+      <div class = "name"> Username</div>
+        <input type ="text" name ="name" placeholder="Enter Username"><br><br>
+
+      <div class = "name">Address</div>
+        <input type ="text" name ="address" placeholder="Enter Address"><br><br> 
+
+      <div class = "name">Phone number</div>
+        <input type ="text" name ="phone" placeholder="Enter Phone number"><br><br>
+      <div class = "name">E-mail Address</div>
+        <input type ="text" name ="E-mail address" placeholder="Enter E-mail Address"><br><br> 
+      <div class = "name">Select a facility</div><br>
+        <input type="radio" name="Select" value="1">Fitness Center<br>
+        <input type="radio" name="Select" value="2">Spa<br>
+        <input type="radio" name="Select" value="3">Pool<br><br>
+
+      <div class = "name">Payment methods</div><br>
+        <input type="radio" name="Payment" value="1">cash <br>
+        <input type="radio" name="Payment" value="2">credit/ debit card payment<br>
+        <input type="radio" name="Payment" value="3">Pay with Visa/master<br><br><br>
+
+    	<input type ="submit" name ="bu" value ="submit" onclick="x()">
+      <button><a href="Online order.html">Cancel</a></button><br><br>
+    </div>
+    </fieldset>
+  </form>
+</div>
+</body>
+</html>
